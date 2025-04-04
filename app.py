@@ -6,8 +6,8 @@ from torchvision.utils import make_grid
 from model import Generator  # Ensure this file contains your Generator class
 
 # Set title
-st.title("🎨 Anime Face Generator (GAN)")
-st.write("Generate AI-powered anime faces using a trained GAN model.")
+st.title("Anime Face Generator (GAN) By Anmol ")
+st.write("Generate AI-powered anime faces of cartoons using a trained GAN model.")
 
 # Set device
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
