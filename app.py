@@ -5,8 +5,11 @@ import matplotlib.pyplot as plt
 from torchvision.utils import make_grid
 from model import Generator  # Ensure this file contains your Generator class
 
+# Show the image at the top
+st.image("image.png", use_column_width=True)
+
 # Set title
-st.title("Anime Face Generator (GAN) By Anmol ")
+st.title("Anime Face Generator (GAN) By Anmol")
 st.write("Generate AI-powered anime faces of cartoons using a trained GAN model.")
 
 # Set device
@@ -41,4 +44,5 @@ if st.button("Generate Faces"):
     npimg = grid.permute(1, 2, 0).numpy()
 
     st.image(npimg, caption="Generated Anime Faces", use_column_width=True)
+
 
